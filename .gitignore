@@ -9,3 +9,14 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints
+
+# Archivos objeto
+*.o
+
+# Ejecutables
+*.exe
+*.out
+a.out
+
+# Archivos de módulo de Fortran
+*.mod
