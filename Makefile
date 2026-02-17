@@ -5,7 +5,7 @@ run-clases-%:
 	$(FC) clases/$*.f90 -o $* && ./$(*)
 
 run-tareas-%:
-	$(FC) $(FFLAGS) tareas/$*.f90 -o $* && ./$(*)
+	$(FC) tareas/$*.f90 -o $* && ./$(*)
 
 clean:
 	rm -f *.o *.mod
