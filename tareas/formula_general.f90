@@ -3,7 +3,7 @@ complex(8) :: a2,b2,c2,y1,y2
 complex(16) :: a3,b3,c3,z1,z2
 
 ! Cálculo de las raices con precisión simple
-a1 = (1., 1.)
+a1 = (1.1, 1.)
 b1 = (2., 2.)
 c1 = (3., 3.)
 
@@ -19,7 +19,7 @@ print*, a1*x1**2 + b1*x1 + c1, "----> Comprobación de x1"
 print*, a1*x2**2 + b1*x2 + c1, "----> Comprobación de x2"
 
 ! Cálculo de las raices con precisión doble
-a2 = (1.d0, 1.d0)
+a2 = (1.1d0, 1.d0)
 b2 = (2.d0, 2.d0)
 c2 = (3.d0, 3.d0)
 
@@ -35,7 +35,7 @@ print*, a2*y1**2 + b2*y1 + c2, "----> Comprobación de x1"
 print*, a2*y2**2 + b2*y2 + c2, "----> Comprobación de x2"
 
 ! Cálculo de las raices con precisión cuádruple
-a3 = (1.q0, 1.q0)
+a3 = (1.1q0, 1.q0)
 b3 = (2.q0, 2.q0)
 c3 = (3.q0, 3.q0)
 
