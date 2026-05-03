@@ -22,7 +22,7 @@ DO
     Sum = Sum + ((-1)**n)*Term ! Sumamos el siguiente termino alternando el signo
     n = n + 1 ! Siguiente valor del indice de la suma
     Count = Count + 2 ! Representa el término 2n
-    Fact = factorial(count) ! CALCULAR EL VALOR DEL FACTORIAL DE 2n CON UNA FUNCION PARA EL FACTORIAL
+    Fact = Factorial(count) ! CALCULAR EL VALOR DEL FACTORIAL DE 2n CON UNA FUNCION PARA EL FACTORIAL
     Term = (X**(Count)) / Fact ! Calcula el término no nulo siguiente de la serie
 END DO
 
@@ -33,15 +33,14 @@ WRITE(*,*) ' Abs(Error) = ', ABS((Sum - cos(X))/cos(X))
 
 contains
 
-function factorial(k) result(Fact)
+INTEGER function Factorial(k)
     IMPLICIT NONE
     INTEGER :: k ! Valor a calcularle el factorial
-    INTEGER :: Fact ! Variable donde se guardará el valor del factorial de n
     INTEGER :: i
 
-    Fact = 1
+    Factorial = 1
     do i=1, k
-        Fact = Fact * i
+        Factorial = Factorial * i
     end do
 end function factorial
 
