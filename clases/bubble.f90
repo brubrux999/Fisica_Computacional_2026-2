@@ -1,23 +1,37 @@
-! Este programa ordena un arreglo de numeros reales
-      REAL                :: X(10)
-      INTEGER             :: K,I,J
-      DO K=1,10
-           PRINT "(1x,'Introduce el elemento X(',I2,')')", K
-           READ*, X(K)
-     ENDDO
-!    El siguiente do se encargara de ordenarlos
-      DO I=1,9
-         DO J=1,9
-        
-         IF (X(J)>X(J+1)) THEN
-            HOLD = X(J)
-            X(J) = X(J+1)
-            X(J+1) = HOLD
-         ENDIF
-         ENDDO  
-      ENDDO
+PROGRAM BUBBLE
+! Este programa ordena un arreglo de números reales
 
-! Se imprime el arreglo
-      PRINT*, X
-END PROGRAM 
+IMPLICIT NONE
+REAL, ALLOCATABLE :: X(:)
+REAL :: HOLD
+INTEGER :: k, i, j
+INTEGER :: N ! Tamaño del array a ordenar
 
+READ(*,*) N
+ALLOCATE(X(N))
+
+DO k=1, N
+      READ(*,*) X(k)
+ENDDO
+
+! Se imprime el arreglo desordenado
+!WRITE(*,*) X
+
+! El siguiente do se encargará de ordenarlos
+DO i=1, N-1
+      DO j=1, N-1
+      
+      IF (X(j)>X(j+1)) THEN
+      HOLD = X(j)
+      X(j) = X(j+1)
+      X(j+1) = HOLD
+      ENDIF
+      ENDDO  
+ENDDO
+
+! Se imprime el arreglo ordenado
+!WRITE(*,*) X
+
+DEALLOCATE(X)
+
+END PROGRAM BUBBLE
