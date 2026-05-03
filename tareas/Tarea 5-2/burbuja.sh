@@ -3,8 +3,8 @@
 
 # Compilar los archivos de cada método
 gfortran ./tareas/Tarea\ 5-2/aleatorios.f90 -o aleatorios
-gfortran ./clases/bubble.f90 -o bubble
-gfortran ./clases/burbuja.f90 -o burbuja
+gfortran ./clases/Método de la Burbuja/bubble.f90 -o bubble
+gfortran ./clases/Método de la Burbuja/burbuja.f90 -o burbuja
 gfortran ./tareas/Tarea\ 5-2/InsertSort.f90 -o InsertSort
 
 for N in 1000 2500 5000 7500 10000 17500 25000 37500 50000 75000 87500 100000 125000
