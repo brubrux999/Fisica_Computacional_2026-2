@@ -1,0 +1,10 @@
+1 # Opcion entre resolver Ax=b o calcular la inversa
+4 # Número de ecuaciones/renglones
+2 7 -1 1 # Matriz A
+3 0 0 4
+-1 -2 -3 0
+1 5 5 2
+2 # Vector columna b
+5
+4
+0
