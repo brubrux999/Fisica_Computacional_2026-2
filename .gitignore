@@ -20,3 +20,6 @@ a.out
 
 # Archivos de módulo de Fortran
 *.mod
+
+# PDF de tareas completas
+Tareas\ Compu/
